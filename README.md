@@ -82,7 +82,9 @@ Create a class for the dealer's hand.
 
 The BlackjackHand class isn't exactly right for the dealer's hand, because we want to be able to hide the dealer's first card when the hand is printed -- displaying the String "XX" instead of the card's usual string. This first card should be hidden until the player's turn is done, at which point it should be revealed.
 
-**Create a new class for the dealer's hand, giving it the name BlackjackDealerHand**. It should be a subclass of one of the existing classes -- you'll need to figure out which one makes the most sense to extend. Your new class will inherit the fields and methods of the class that it extends. In addition, it will need a **field that keeps track of whether or not the first card is currently being hidden**, and a **method that allows you to change the value of that field**. Use appropriate names for both the field and the method. In addition, you should **override the toString method** so that the dealer's hand will be printed correctly both during and after the player's turn. Note that the total value of the dealer's hand should not be printed until after the first card is revealed.
+**Create a new class for the dealer's hand, giving it the name BlackjackDealerHand**. It should be a subclass of one of the existing classes -- you'll need to figure out which one makes the most sense to extend. Your new class will inherit the fields and methods of the class that it extends. You will need to decide whether your class needs any additional fields or methods (it's possible that it won't), and which of the inherited methods should be overriden.
+
+One field  and method that you will need are a **field that keeps track of whether or not the first card is currently being hidden** and a **method that allows you to change the value of that field**. Use appropriate names for both the field and the method. In addition, you should **override the toString method** so that the dealer's hand will be printed correctly both during and after the player's turn. Note that the total value of the dealer's hand should not be printed until after the first card is revealed.
 
 Once you have defined your BlackjackDealerHand class, **modify the second line of the playHand method so that it uses the new subclass for the dealer's hand**. In addition, you will need to **add whatever lines are needed to "reveal" the dealer's first card after the player's turn is over.** Compile and run the program to test the changes that you made for this task, and make any additional changes as needed.
 
@@ -102,9 +104,7 @@ Once you have these subclasses implemented, **change the lines in the main metho
 
 Task 5
 --
-Implement the printResult method.
-
-In Blackjack.java, implement the printResult method so that it prints an appropriate message summarizing the results of a given hand.
+In Blackjack.java, **implement the printResult method** so that it prints an appropriate message summarizing the results of a given hand.
 
 Here are some special points to keep in mind when writing this method:
 
@@ -114,11 +114,12 @@ Here are some special points to keep in mind when writing this method:
 
 * If the user gets 21 from his first two cards, a special "Blackjack!" message should be displayed unless the dealer also has 21 from her first two cards.
 
+Also, in Blackjack.java, in the playHand method, **uncomment two commands where indicated when you have written the appropriate methods in the appropriate classes.**
+
 See the sample output for what the messages should look like.
 
 Once all of these tasks are completed, you will have a working Blackjack game!
 --
-
 Implementation guidelines
 --
 * Do not change the headers of any of the methods provided. You may think that it is necessary to do so in light of the new subclasses that you are writing, but polymorphism allows you to keep the existing types of the parameters of the methods. For example, the playHand method takes two parameters of type Player. Those parameters can be used for objects of any subclass of Player, thanks to the power of polymorphism.
@@ -143,4 +144,3 @@ Upload multiple files to Blackboard:
 Do not submit the files that did not change.
 
 Check your submission for any possible problems, and alert me promptly if you encounter any.
-

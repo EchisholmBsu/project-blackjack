@@ -7,7 +7,7 @@ In this problem, you will complete an implementation of the popular card game, B
 
 RULES OF THE GAME
 --
-In Blackjack, the goal is to assemble the hand with the highest value, without going over a value of 21. Cards numbered 2-10 are worth their stated value. Face cards (Jacks, Queens, and Kings) have a value of 10. Aces have a value of 11, unless doing so would make the hand's value exceed 21, in which case they have a value of 1. The best outcome is a combination of an ace with either a 10 or a face card; this is known as blackjack (regardless of whether the face card is black or a jack!).
+In Blackjack, the goal is to assemble the hand with the highest value, without going over a value of 21. Cards numbered 2-10 are worth their stated value. Face cards (Jacks, Queens, and Kings) have a value of 10. Aces have a value of 11, unless having a value of 11 would make the hand's value exceed 21, in which case they have a value of 1. The best outcome is a combination of an ace with either a 10 or a face card; this is known as blackjack (regardless of whether the face card is black or a jack!).
 
 The dealer starts by dealing two cards to the player and two cards to the herself. One of the dealer's cards is shown to the player; the other is dealt face down.
 
@@ -38,10 +38,17 @@ Deck.java
 This class is a blueprint for objects that represent a deck of 52 cards. These objects have several methods, the most useful of which are the shuffle and dealCard methods.
 Hand.java: This class serves as a blueprint for objects that represent a hand of cards -- i.e., the collection of cards belonging to an individual person. It contains the state and behavior common to any hand of cards, regardless of the game being played. Key methods include the addCard method for adding a card to the hand, and the getValue method for getting the total value of the hand. You will extend this class to create subclasses for the the player's hand and the dealer's hand in Blackjack.
 
+Hand.java
+--
+This class is a blueprint for objects that represent a hand of cards -- i.e., the collection of cards belonging to an individual person. It contains the state and behavior common to any hand of cards, regardless of the game being played. Key methods include the addCard method for adding a card to the hand, and the getValue method for getting the total value of the hand. You will extend this class to create subclasses for the the player's hand and the dealer's hand in Blackjack.
+
 Player.java
 --
 This is an abstract class that serves as a superclass for classes that represent different types of players -- in particular, the ways in which players decide whether to take another hit. This class has an abtract method called wantsHit that takes two parameters: the player's own hand and the opponent's hand. Implementations of this abstract method should return true in cases in which the player should take another hit and false otherwise. We have given you one simplistic subclass of this abstract superclass (see below). You will create two others.
-RecklessPlayer.java: This class extends Player. It implements a simplistic version of wantsHit that always returns true, which means that this type of player always asks for another hit!
+
+RecklessPlayer.java
+--
+This class extends Player. It implements a simplistic version of wantsHit that always returns true, which means that this type of player always asks for another hit!
 You should not modify the code in any of the above classes.
 
 In addition, I am providing a working incomplete implementation of Blackjack.java.

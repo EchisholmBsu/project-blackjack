@@ -21,7 +21,7 @@ The code for this program will be divided into a number of different classes. We
 
 Card.java
 --
-This class is a blueprint for the objects that represent the individual cards. Each Card object has a type and a suit, as well as a default value that can be obtained by using the getDefaultValue() instance method. The default values are as follows:
+This class is a blueprint for the objects that represent the individual cards. Each Card object has a type and a suit, as well as a default value that can be obtained by using the instance method getDefaultValue. The default values are as follows:
 
 * Ace (default value 1)
 * 2-10 (default value same as number on card)
@@ -31,12 +31,11 @@ This class is a blueprint for the objects that represent the individual cards. E
 
 Note that the default values don't always match the values specified for Blackjack, because the Card class is designed to be used in different types of card games. You will adjust the values as needed in the context of the Blackjack-specific objects that you will write for this assignment.
 
-A String representation of a card is provided by the toString() method, which is called implicitly when you try to print a Card. For example, if you attempt to print the Card object representing the King of Spades, you will get the string "KS". In addition, each Card has methods called isAce() and isFaceCard() that return either true or false.
+A String representation of a card is provided by the toString method, which is called implicitly when you try to print a Card. For example, if you attempt to print the Card object representing the King of Spades, you will get the string "KS". In addition, each Card has methods called isAce and isFaceCard that return either true or false.
 
 Deck.java
 --
 This class is a blueprint for objects that represent a deck of 52 cards. These objects have several methods, the most useful of which are the shuffle and dealCard methods.
-Hand.java: This class serves as a blueprint for objects that represent a hand of cards -- i.e., the collection of cards belonging to an individual person. It contains the state and behavior common to any hand of cards, regardless of the game being played. Key methods include the addCard method for adding a card to the hand, and the getValue method for getting the total value of the hand. You will extend this class to create subclasses for the the player's hand and the dealer's hand in Blackjack.
 
 Hand.java
 --

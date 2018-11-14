@@ -23,17 +23,11 @@ Card.java
 --
 This class is a blueprint for the objects that represent the individual cards. Each Card object has a type and a suit, as well as a default value that can be obtained by using the getDefaultValue() instance method. The default values are as follows:
 
-card type   default value
-
-Ace             1
-
-2-10            same as number on card
-
-Jack            11
-
-Queen         12
-
-King            13
+* Ace (default value 1)
+* 2-10 (default value same as number on card)
+* Jack (default value 11)
+* Queen (default value 12)
+* King (default value 13)
 
 Note that the default values don't always match the values specified for Blackjack, because the Card class is designed to be used in different types of card games. You will adjust the values as needed in the context of the Blackjack-specific objects that you will write for this assignment.
 

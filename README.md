@@ -19,7 +19,7 @@ STRUCTURE OF THE PROGRAM
 --
 The code for this program will be divided into a number of different classes. We are giving you complete implementations of the following classes:
 
-Card.java
+Card.java (Do not modify.)
 --
 This class is a blueprint for the objects that represent the individual cards. Each Card object has a type and a suit, as well as a default value that can be obtained by using the instance method getDefaultValue. The default values are as follows:
 
@@ -33,26 +33,25 @@ Note that the default values don't always match the values specified for Blackja
 
 A String representation of a card is provided by the toString method, which is called implicitly when you try to print a Card. For example, if you attempt to print the Card object representing the King of Spades, you will get the string "KS". In addition, each Card has methods called isAce and isFaceCard that return either true or false.
 
-Deck.java
+Deck.java (Do not modify.)
 --
 This class is a blueprint for objects that represent a deck of 52 cards. These objects have several methods, the most useful of which are the shuffle and dealCard methods.
 
-Hand.java
+Hand.java (Do not modify.)
 --
 This class is a blueprint for objects that represent a hand of cards -- i.e., the collection of cards belonging to an individual person. It contains the state and behavior common to any hand of cards, regardless of the game being played. Key methods include the addCard method for adding a card to the hand, and the getValue method for getting the total value of the hand. You will extend this class to create subclasses for the the player's hand and the dealer's hand in Blackjack.
 
-Player.java
+Player.java (Do not modify.)
 --
 This is an abstract class that serves as a superclass for classes that represent different types of players -- in particular, the ways in which players decide whether to take another hit. This class has an abtract method called wantsHit that takes two parameters: the player's own hand and the opponent's hand. Implementations of this abstract method should return true in cases in which the player should take another hit and false otherwise. We have given you one simplistic subclass of this abstract superclass (see below). You will create two others.
 
-RecklessPlayer.java
+RecklessPlayer.java (Do not modify.)
 --
 This class extends Player. It implements a simplistic version of wantsHit that always returns true, which means that this type of player always asks for another hit!
-You should not modify the code in any of the above classes.
 
 In addition, I am providing a working incomplete implementation of Blackjack.java.
 --
-The Blackjack class contains the main method of the program; you will run this class to start the program. The class also includes several static methods, some of which you will need to modify or complete. Note that this class is cliet code, not a blueprint. It has no instance fields, and all of its methods are static.
+The Blackjack class contains the main method of the program; you will run this class to start the program. The class also includes several static methods, some of which you will need to modify or complete. Note that this class is client code, not a blueprint. It has no instance fields, and all of its methods are static.
 
 Run the program by running Blackjack.java.
 --

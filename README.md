@@ -1,5 +1,5 @@
 # project-blackjack
-This repository contains files for Project 2.
+This repository contains files for Project 2. The project is from David Sullivan with permission.  
 
 OVERVIEW
 --
@@ -142,5 +142,7 @@ Upload multiple files to Blackboard:
 * the files for the subclasses that you wrote for Tasks 2, 3, and 4
 
 Do not submit the files that did not change.
+
+Your files in the final submission will be Blackjack.java, BlackjackDealer.java, BlackjackDealerHand.java, BlackjackHand.java, and ConsolePlayer.java. **Please upload these as a .zip file to Blackboard in your final submission.**
 
 Check your submission for any possible problems, and alert me promptly if you encounter any.

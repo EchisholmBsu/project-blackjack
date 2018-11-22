@@ -112,6 +112,17 @@ dealer: KS  AH  (value = 21)
 player: 2C  6S  3D  JD  (value = 21)
 Push!
 play another hand (y/n)? y
+dealer: XX  JH  
+player: KH  AS  (value = 21)
+
+dealer: 2H  JH  (value = 12)
+player: KH  AS  (value = 21)
+
+dealer: 2H  JH  7C  (value = 19)
+player: KH  AS  (value = 21)
+
+Blackjack!
+play another hand (y/n)? y
 dealer: XX  AS  
 player: 4S  6H  (value = 10)
 

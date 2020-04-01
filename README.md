@@ -1,5 +1,5 @@
 # project-blackjack
-This repository contains files for Project 2. The project is from David Sullivan with permission.  
+This repository contains files for the COMP 152 Course Project Blackjack. The project is from David Sullivan with permission.  
 
 OVERVIEW
 --
@@ -60,7 +60,7 @@ The version of the program provided runs, but it is incomplete in a number of wa
 
 Task 1
 --
-Review the provided code.  Begin by reading over the code that we have given you. Explain the code to another person or out loud to yourself!  Quiz yourself on the methods that are available in the each class.
+Review the provided code.  Begin by reading over the code that we have given you. Explain the code to another person or out loud to yourself!  Quiz yourself on the methods that are available in each class.
 
 Task 2
 --
@@ -122,7 +122,7 @@ Once all of these tasks are completed, you will have a working Blackjack game!
 --
 Implementation guidelines
 --
-* Do not change the headers of any of the methods provided. You may think that it is necessary to do so in light of the new subclasses that you are writing, but polymorphism allows you to keep the existing types of the parameters of the methods. For example, the playHand method takes two parameters of type Player. Those parameters can be used for objects of any subclass of Player, thanks to the power of polymorphism.
+* **Do not change the headers of any of the methods provided.** You may think that it is necessary to do so in light of the new subclasses that you are writing, but POLYMORPHISM ALLOWS YOU TO KEEP THE EXISTING TYPES OF THE PARAMETERS OF THE METHODS. For example, the playHand method takes two parameters of type Player. Those parameters can be used for objects of any subclass of Player, thanks to the power of polymorphism.
 
 * Limit yourself to the concepts we have covered in class.  Do not use any programming constructs that are not in the assigned reading. 
 
@@ -130,19 +130,20 @@ Implementation guidelines
 
 Suggested approach
 --
-Begin by reviewing class notes on inheritance, the corresponding sections of the textbook, and our example programs for inheritance.
+Begin by reviewing your class notes on inheritance, the corresponding sections of the textbook, and our example programs for inheritance (projectVehicle).
 
-Implement, debug, and test one piece of code at a time. Compile frequently; don't wait until after all of your methods have been written to compile. If you are unable to get a given method to compile, make sure to comment out the body of the method (keeping the method header and possibly a dummy return value) so that I'll still be able to test your other methods.
+**Implement, debug, and test one piece of code at a time.** Compile frequently; don't wait until after all of your methods have been written to compile. **If you are unable to get a given method to compile, make sure to comment out the body of the method (keeping the method header and possibly a dummy return value)** so that I'll still be able to test your other methods.
 
 Submitting your work
 --
-Upload multiple files to Blackboard:
+You will invite me as a collaborator to your project on GitHub. It will include
 
 * your modified Blackjack.java file
 * the files for the subclasses that you wrote for Tasks 2, 3, and 4
 
-Do not submit the files that did not change.
+I will assume the other files did not change and will use the original versions when I test your code.
 
-Your files in the final submission will be Blackjack.java, BlackjackDealer.java, BlackjackDealerHand.java, BlackjackHand.java, and ConsolePlayer.java. **Please upload these as a .zip file to Blackboard in your final submission.**
+**Your files that I will use to grade your final project will be Blackjack.java, BlackjackDealer.java, BlackjackDealerHand.java, BlackjackHand.java, and ConsolePlayer.java.**
 
-Check your submission for any possible problems, and alert me promptly if you encounter any.
+Check your final version for any possible problems, and alert me promptly if you encounter any.
+
